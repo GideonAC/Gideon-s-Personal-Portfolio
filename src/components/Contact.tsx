@@ -1,12 +1,8 @@
 import styled from "styled-components";
-import { FaPhone } from "react-icons/fa6";
+import { FaPhone, FaLocationArrow } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { FaLocationArrow } from "react-icons/fa";
-import { useState } from "react";
 
 const SixthBlock = () => {
-  const [email, setEmail] = useState("")
-
   return (
     <Background id="Contact">
       <HeadText>
@@ -16,6 +12,7 @@ const SixthBlock = () => {
           </b>
         </p>
       </HeadText>
+
 
       <Box>
         <Icons>
@@ -30,20 +27,44 @@ const SixthBlock = () => {
           </p>
         </Icons>
 
-      
-          <StyledForm action="">
-          <input type="text" name="fullname" placeholder="Full Name" />
-          <input type="email" name="email" placeholder="Email" />
+        <StyledForm
+          action="mailto:arinzechukwugideon@gmail.com"
+          method="POST"
+          encType="text/plain"
+          name="Form-Submission"
+        >
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Full Name"
+            minLength={5}
+            maxLength={30}
+            required
+          />
+
+          <input type="email" name="user_email" placeholder="Email" required />
 
           <span>
-            <input type="text" name="phone" placeholder="Phone Number" />
-            <input type="text" name="subject" placeholder="Subject" />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+
+            <input type="text" name="subject" placeholder="Subject" required />
           </span>
 
-            <input type="text" name="message" placeholder="Your Message" />
-            <input type="button" value="Send" className="send"/>
-          </StyledForm>
-    
+          <textarea
+            rows={3}
+            name="message"
+            placeholder="Your Message"
+            maxLength={1000}
+            required
+          />
+
+          <input type="submit" value="Send" className="send" />
+        </StyledForm>
       </Box>
     </Background>
   );
@@ -94,47 +115,49 @@ const Icons = styled.div`
 `;
 
 const StyledForm = styled.form`
-display: flex;
-flex-direction: column;
-gap: 15px;
-width: 657px;
-line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 657px;
+  line-height: 40px;
 
-.send{
+  .send {
     width: 150px;
     margin: auto;
     cursor: pointer;
-}
+  }
 
-
-
-span{
+  span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
-    input{
-        width: 50%;
-        gap: 20px;
-        /* color: #43366A; */
+
+    input {
+      width: 50%;
+      gap: 20px;
+      /* color: #43366A; */
     }
     /* justify-content: space-around; */
-}
+  }
 
-
-input{
+  input {
     line-height: 20px;
     padding: 10px;
     border-radius: 30px;
     line-height: 25px;
     font-size: 15px;
     /* background-color: #43366A; */
+  }
 
-}
+  textarea {
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    line-height: 25px;
+    font-size: 15px;
+  }
 
-
-
-p {
+  p {
     color: white;
     line-height: 30px;
     font-size: 23px;

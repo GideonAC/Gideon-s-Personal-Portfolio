@@ -10,6 +10,39 @@ const Portfolio = () => {
           </b>
         </p>
       </HeadText>
+
+      <Box>
+          <InsideBox>
+          
+          </InsideBox>
+
+          <InsideBox>
+            
+          </InsideBox>
+
+          <InsideBox>
+          
+          </InsideBox>
+
+        </Box>
+
+
+        <Box>
+          <InsideBox>
+          
+          </InsideBox>
+
+          <InsideBox>
+            
+          </InsideBox>
+
+          <InsideBox>
+          
+          </InsideBox>
+
+        </Box>
+
+      
     </Background>
   )
 }
@@ -42,3 +75,41 @@ const HeadText = styled.div`
     }
   }
 `;
+
+const Box = styled.div`
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+`
+
+const InsideBox = styled.div`
+background-color: white;
+width: 275px;
+height: 200px;
+position: relative;
+overflow: hidden;
+border-radius: 20px;
+justify-content: center;
+text-align: center;
+padding: 10px;
+
+span{
+  color: #31065a;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text{
+  padding-top: 20px;
+  font-size: 1.2rem;
+  line-height: 20px;
+  color: #31065a;
+}
+
+img{
+  width: 100px;
+}
+`

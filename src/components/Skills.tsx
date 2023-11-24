@@ -11,83 +11,40 @@ const FifthBlock = () => {
         </p>
       </HeadText>
 
+      <MotherDiv>
+        <DivOne>
+          <Container>
+          <Icon>
+
+          </Icon>
+          <p></p>
+          </Container>
+
+        </DivOne>
+
+
+
+        <DivOne>
+
+        </DivOne>
+      </MotherDiv>
+      
+      
+      
+{/*       
       <Box>
-        <BoxDiv>
-        <span>
-          <p>HTML</p>
-        </span>
-        <Line>
-          <Percentage></Percentage>
-        </Line>
-        <span>
-          <p>90%</p>
-        </span>
-        </BoxDiv>
+        <InsideBox>
+          <Container>
+            <Icon>
 
-        <BoxDiv>
-        <span>
-          <p>HTML</p>
-        </span>
-        <Line>
-          <Percentage></Percentage>
-        </Line>
-        <span>
-          <p>90%</p>
-        </span>
-        </BoxDiv>
+            </Icon>
+            <p></p>
+          </Container>
 
-        <BoxDiv>
-        <span>
-          <p>HTML</p>
-        </span>
-        <Line>
-          <Percentage></Percentage>
-        </Line>
-        <span>
-          <p>90%</p>
-        </span>
-        </BoxDiv>
 
-        <BoxDiv>
-        <span>
-          <p>HTML</p>
-        </span>
-        <Line>
-          <Percentage></Percentage>
-        </Line>
-        <span>
-          <p>90%</p>
-        </span>
-        </BoxDiv>
+        </InsideBox>
+      </Box> */}
 
-        <BoxDiv>
-        <span>
-          <p>HTML</p>
-        </span>
-        <Line>
-          <Percentage></Percentage>
-        </Line>
-        <span>
-          <p>90%</p>
-        </span>
-        </BoxDiv>
-
-        <BoxDiv>
-        <span>
-          <p>HTML</p>
-        </span>
-        <Line>
-          <Percentage></Percentage>
-        </Line>
-        <span>
-          <p>90%</p>
-        </span>
-        </BoxDiv>
-      </Box>
-      
-      
-
-      
     </Background>
   );
 };
@@ -120,39 +77,69 @@ const HeadText = styled.div`
   }
 `;
 
+
 const Box = styled.div`
-  padding-top: 130px;
-  
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+`;
+
+const InsideBox = styled.div`
+  background-color: white;
+  width: 80%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
 
   span {
-    color: white;
+    color: #31065a;
     font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .text {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: #31065a;
+  }
+
+  img {
+    width: 100px;
   }
 `;
 
-const Line = styled.div`
+const MotherDiv = styled.div`
   background-color: white;
-  width: 60rem;
-  height: 15px;
-  border-radius: 8px;
+  width: 80%;
+  height: 550px;
+  padding: 10px;
+  margin-top: 70px ;
+  margin-left: 150px;
   display: flex;
-  flex-direction: column;
+  border-radius: 10px;
   justify-content: center;
-`;
+  text-align: center;
+`
 
-const Percentage = styled.div`
-  background-color: #fd562a;
-  width: 90%;
-  height: 70%;
-  border-radius: 8px;
-  border-bottom: none;
-`;
+const DivOne = styled.div`
+  
 
-const BoxDiv = styled.div`
-   display: flex;
-   justify-content: center;
-   gap: 5rem;
-  line-height: 60px;
-  align-items: center;
+`
 
+const Icon = styled.div`
+color: pink;
+height: 64px;
+width: 64px;
+z-index: 10;
+`
+
+const Container = styled.div`
+  
 `
