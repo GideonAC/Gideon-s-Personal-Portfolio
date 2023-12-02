@@ -54,6 +54,16 @@ const Background = styled.div`
   width: 100%;
   height: 800px;
   background-color: #170550;
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 const HeadText = styled.div`
@@ -64,6 +74,13 @@ const HeadText = styled.div`
   margin: auto;
   padding-bottom: 10px;
 
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+
   p {
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -72,6 +89,14 @@ const HeadText = styled.div`
 
     span {
       color: #fd562a;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 26px;
     }
   }
 `;
@@ -82,6 +107,22 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 30px;
+  }
 
 `
 
@@ -95,6 +136,7 @@ border-radius: 20px;
 justify-content: center;
 text-align: center;
 padding: 10px;
+
 
 span{
   color: #31065a;

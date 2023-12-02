@@ -1,5 +1,51 @@
 import styled from "styled-components";
 
+
+
+// const Icons = [
+//   {
+//     id: 1,
+//     techIcon: ,
+//     name: "HTML"
+//   },
+//   {
+//     id: 2,
+//     techIcon:  ,
+//     name: "CSS"
+//   },
+//   {
+//     id: 3,
+//     techIcon: ,
+//     name: "JavaScript"
+//   },
+//   {
+//     id: 4,
+//     techIcon: "Gideon Arinzechukwu",
+//     name: "published a new art titled Father and Son"
+//   },
+//   {
+//     id: 5,
+//     techIcon: "Gideon Arinzechukwu",
+//     name: "published a new art titled Father and Son"
+//   },
+//   {
+//     id: 6,
+//     techIcon: "Gideon Arinzechukwu",
+//     name: "published a new art titled Father and Son"
+//   },
+//   {
+//     id: 7,
+//     techIcon: "Gideon Arinzechukwu",
+//     name: "published a new art titled Father and Son"
+//   },
+//   {
+//     id: 8,
+//     techIcon: "Gideon Arinzechukwu",
+//     name: "published a new art titled Father and Son"
+//   },
+// ];
+
+
 const FifthBlock = () => {
   return (
     <Background id="Skills">
@@ -15,9 +61,9 @@ const FifthBlock = () => {
         <DivOne>
           <Container>
           <Icon>
-
+            <img src="src/images/html.png" alt="Html" />
           </Icon>
-          <p></p>
+          <p>HTML</p>
           </Container>
 
         </DivOne>
@@ -137,9 +183,13 @@ const Icon = styled.div`
 color: pink;
 height: 64px;
 width: 64px;
-z-index: 10;
+position: relative;
+/* z-index: 10; */
 `
 
 const Container = styled.div`
-  
+height: 150px;
+width: 150px;
+background-color: black;
+gap: 15px;
 `

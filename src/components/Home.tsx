@@ -69,6 +69,16 @@ const Background1 = styled.div`
   width: 100%;
   height: 776px;
   background-color: #31065a;
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 const MainDiv = styled.div`
@@ -76,6 +86,13 @@ const MainDiv = styled.div`
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
 `;
 
 export const TextBox = styled.div`
@@ -84,6 +101,15 @@ export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px){
+    line-height: 80px;
+  }
+
+  @media screen and (max-width: 600px){
+    line-height: 55px;
+    font-size: small;
+  }
 
   .hello {
     font-family: "Montserrat", sans-serif;
@@ -95,36 +121,66 @@ export const TextBox = styled.div`
     font-family: "Dangrek", sans-serif;
     font-size: 90px;
     color: white;
+
+    @media screen and (max-width: 600px){
+      font-size: 55px;
+    }
   }
 
   .lName {
     font-family: "Dangrek", sans-serif;
     font-size: 90px;
     color: #fd562a;
+
+    @media screen and (max-width: 600px){
+      font-size: 53px;
+    }
   }
 
   .dev {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
+
+    @media screen and (max-width: 600px){
+      font-size: 20px;
+    }
   }
 
   .socialIcons {
     padding-top: 10px;
     display: flex;
     gap: 20px;
-    /* justify-content: space-around; */
+    
+
+    @media screen and (max-width: 600px){
+      font-size: 20px;
+      gap: 10px;
+    }
   }
 `;
 
 export const ImageDiv = styled.div`
   width: 350px;
   height: 460px;
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+
 `;
 
 const Image = styled.img`
   width: 577px;
   height: 683px;
+
+  @media screen and (max-width: 600px){
+      width: 100%;
+      height: 100%;
+      margin-top: 0%;
+    }
 `;
 
 export const Icons = styled.div`
@@ -147,10 +203,20 @@ export const Icons = styled.div`
     color: white;
     border-radius: 30px;
     cursor: pointer;
+
+    @media screen and (max-width: 600px){
+      font-size: 15px;
+    }
   }
 
   a {
     text-decoration: none;
     color: white;
   }
+
+  @media screen and (max-width: 600px){
+      font-size: 15px;
+      gap: 8px;
+      margin-top: 0px;
+    }
 `;

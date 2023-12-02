@@ -41,6 +41,16 @@ const Background = styled.div`
   width: 100%;
   height: 840px;
   background-color: #31065a;
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    width: 100%;
+  }
 `
 
 const HeadText = styled.div`
@@ -50,6 +60,16 @@ const HeadText = styled.div`
   text-align: center;
   margin: auto;
   padding-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    width: 50%;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    width: 50%;
+  }
 
     p{
         text-align: center;
@@ -61,6 +81,16 @@ const HeadText = styled.div`
         span{
             color: #fd562a;
         }
+
+        @media screen and (max-width: 768px){
+            font-size: 26px;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 600px){
+            font-size: 26px;
+            margin-top: 10px;
+        }
     }
 `
 
@@ -70,6 +100,23 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
 `
 
@@ -83,6 +130,21 @@ border-radius: 20px;
 justify-content: center;
 text-align: center;
 padding: 10px;
+
+@media screen and (max-width: 768px) {
+  margin-top: -10px;
+  width: 80%;
+  height: 70%;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  margin-top: -10px;
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  padding-bottom: 10px;
+}
 
 span{
   color: #31065a;

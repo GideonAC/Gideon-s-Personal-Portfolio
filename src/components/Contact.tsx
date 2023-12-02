@@ -20,7 +20,7 @@ const SixthBlock = () => {
             {<FaPhone />} <span>+234-7061904384</span>{" "}
           </p>
           <p>
-            {<IoMail />} <span>arinzechukwugideon@gmail.com</span>{" "}
+            {<IoMail />} <span id="mail">arinzechukwugideon@gmail.com</span>{" "}
           </p>
           <p>
             {<FaLocationArrow />} <span>Lagos State, Nigeria</span>{" "}
@@ -76,6 +76,16 @@ const Background = styled.div`
   width: 100%;
   height: 840px;
   background-color: #31065a;
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 const HeadText = styled.div`
@@ -85,11 +95,21 @@ const HeadText = styled.div`
   text-align: center;
   margin: auto;
   padding-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    width: 30%;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    width: 30%;
+  }
   p {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 
     span {
       color: #fd562a;
@@ -101,6 +121,38 @@ const Box = styled.div`
   padding-top: 150px;
   display: flex;
   justify-content: space-around;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-bottom: 50px;
+  }
+
+  p{
+    @media screen and (max-width: 768px) {
+      margin-right: 300px;
+      font-size: 26px;
+
+      #mail{
+        margin-bottom: 10px;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-left: 30px;
+    font-size: 15px;
+  }
+  }
 `;
 
 const Icons = styled.div`
@@ -108,6 +160,18 @@ const Icons = styled.div`
   color: white;
   gap: 50px;
   font-size: 35px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+   margin-left: auto;
+  }
 
   span {
     padding-left: 30px;
@@ -120,6 +184,18 @@ const StyledForm = styled.form`
   gap: 15px;
   width: 657px;
   line-height: 40px;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
 
   .send {
     width: 150px;
