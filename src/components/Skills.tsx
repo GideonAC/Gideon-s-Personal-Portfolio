@@ -1,50 +1,87 @@
 import styled from "styled-components";
 
-
-
-// const Icons = [
-//   {
-//     id: 1,
-//     techIcon: ,
-//     name: "HTML"
-//   },
-//   {
-//     id: 2,
-//     techIcon:  ,
-//     name: "CSS"
-//   },
-//   {
-//     id: 3,
-//     techIcon: ,
-//     name: "JavaScript"
-//   },
-//   {
-//     id: 4,
-//     techIcon: "Gideon Arinzechukwu",
-//     name: "published a new art titled Father and Son"
-//   },
-//   {
-//     id: 5,
-//     techIcon: "Gideon Arinzechukwu",
-//     name: "published a new art titled Father and Son"
-//   },
-//   {
-//     id: 6,
-//     techIcon: "Gideon Arinzechukwu",
-//     name: "published a new art titled Father and Son"
-//   },
-//   {
-//     id: 7,
-//     techIcon: "Gideon Arinzechukwu",
-//     name: "published a new art titled Father and Son"
-//   },
-//   {
-//     id: 8,
-//     techIcon: "Gideon Arinzechukwu",
-//     name: "published a new art titled Father and Son"
-//   },
-// ];
-
+const Icons = [
+  {
+    id: 1,
+    imageUrl: <img src="src/images/html.png" alt="html" />,
+    name: "HTML",
+  },
+  {
+    id: 2,
+    imageUrl: <img src="src/images/css.png" alt="css" />,
+    name: "CSS",
+  },
+  {
+    id: 3,
+    imageUrl: <img src="src/images/icon-javscript.svg" alt="javascript" />,
+    name: "JavaScript",
+  },
+  {
+    id: 4,
+    imageUrl: <img src="src/images/icon-typescript.svg" alt="typescript" />,
+    name: "TypeScript",
+  },
+  {
+    id: 5,
+    imageUrl: <img src="src/images/icon-react.svg" alt="react" />,
+    name: "React",
+  },
+  {
+    id: 6,
+    imageUrl: <img src="src/images/icon-nodejs.svg" alt="node" />,
+    name: "Node.Js",
+  },
+  {
+    id: 7,
+    imageUrl: <img src="src/images/icon-express.svg" alt="express" />,
+    name: "Express",
+  },
+  {
+    id: 8,
+    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
+    name: "Next.Js",
+  },
+  {
+    id: 9,
+    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
+    name: "Next.Js",
+  },
+  {
+    id: 10,
+    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
+    name: "Next.Js",
+  },
+  {
+    id: 11,
+    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
+    name: "Next.Js",
+  },
+  {
+    id: 12,
+    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
+    name: "Next.Js",
+  },
+  {
+    id: 13,
+    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
+    name: "Next.Js",
+  },
+  {
+    id: 14,
+    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
+    name: "Next.Js",
+  },
+  {
+    id: 15,
+    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
+    name: "Next.Js",
+  },
+  {
+    id: 16,
+    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
+    name: "Next.Js",
+  },
+];
 
 const FifthBlock = () => {
   return (
@@ -59,6 +96,15 @@ const FifthBlock = () => {
 
       <MotherDiv>
         <DivOne>
+          {Icons.map((icon) => (
+            <Container key={icon.id}>
+              <Icon>{icon.imageUrl}</Icon>
+              <p>{icon.name}</p>
+            </Container>
+          ))}
+
+          {/* <Container>
+          )
           <Container>
           <Icon>
             <img src="src/images/html.png" alt="Html" />
@@ -66,31 +112,100 @@ const FifthBlock = () => {
           <p>HTML</p>
           </Container>
 
-        </DivOne>
-
-
-
-        <DivOne>
-
-        </DivOne>
-      </MotherDiv>
-      
-      
-      
-{/*       
-      <Box>
-        <InsideBox>
-          <Container>
-            <Icon>
-
-            </Icon>
-            <p></p>
+          {/* <Container>
+          <Icon>
+            <img src="src/images/css.png" alt="css" />
+          </Icon>
+          <p>CSS</p>
           </Container>
 
+          <Container>
+          <Icon>
+            <img src="src/images/icon-javscript.svg" alt="javascript" />
+          </Icon>
+          <p>JavaScript</p>
+          </Container>
 
-        </InsideBox>
-      </Box> */}
+          <Container>
+          <Icon>
+            <img src="src/images/icon-typescript.svg" alt="typescript" />
+          </Icon>
+          <p>TypeScript</p>
+          </Container>
 
+          <Container>
+          <Icon>
+            <img src="src/images/icon-react.svg" alt="react" />
+          </Icon>
+          <p>React</p>
+          </Container>
+
+          <Container>
+          <Icon>
+            <img src="src/images/icon-nodejs.svg" alt="nodejs" />
+          </Icon>
+          <p>Node.Js</p>
+          </Container>
+
+          <Container>
+          <Icon>
+            <img src="src/images/icon-express.svg" alt="express" />
+          </Icon>
+          <p>Express</p>
+          </Container> */}
+        </DivOne>
+
+        <DivOne>
+          {/* <Container>
+          <Icon>
+            <img src="src/images/icon-express.svg" alt="express" />
+          </Icon>
+          <p>Express</p>
+          </Container>
+
+          <Container>
+          <Icon>
+            <img src="src/images/icon-express.svg" alt="express" />
+          </Icon>
+          <p>Express</p>
+          </Container>
+
+          <Container>
+          <Icon>
+            <img src="src/images/icon-express.svg" alt="express" />
+          </Icon>
+          <p>Express</p>
+          </Container>
+
+          <Container>
+          <Icon>
+            <img src="src/images/icon-express.svg" alt="express" />
+          </Icon>
+          <p>Express</p>
+          </Container>
+
+          <Container>
+          <Icon>
+            <img src="src/images/icon-express.svg" alt="express" />
+          </Icon>
+          <p>Express</p>
+          </Container>
+
+          <Container>
+          <Icon>
+            <img src="src/images/icon-express.svg" alt="express" />
+          </Icon>
+          <p>Express</p>
+          </Container>
+
+          <Container>
+          <Icon>
+            <img src="src/images/icon-express.svg" alt="express" />
+          </Icon>
+          <p>Express</p>
+          </Container> */}
+        </DivOne>
+      </MotherDiv>
     </Background>
   );
 };
@@ -123,73 +238,58 @@ const HeadText = styled.div`
   }
 `;
 
-
-const Box = styled.div`
-  padding-top: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-`;
-
-const InsideBox = styled.div`
-  background-color: white;
-  width: 80%;
-  height: 550px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-
-  span {
-    color: #31065a;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .text {
-    padding-top: 20px;
-    font-size: 1.2rem;
-    line-height: 20px;
-    color: #31065a;
-  }
-
-  img {
-    width: 100px;
-  }
-`;
-
 const MotherDiv = styled.div`
   background-color: white;
   width: 80%;
   height: 550px;
   padding: 10px;
-  margin-top: 70px ;
+  margin-top: 70px;
   margin-left: 150px;
-  display: flex;
   border-radius: 10px;
   justify-content: center;
+  align-content: center;
   text-align: center;
-`
+  display: flex;
+  flex-direction: column;
+`;
 
 const DivOne = styled.div`
-  
-
-`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+`;
 
 const Icon = styled.div`
-color: pink;
-height: 64px;
-width: 64px;
-position: relative;
-/* z-index: 10; */
-`
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin-top: 20px;
+  padding-left: 17px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    position: absolute;
+  }
+`;
 
 const Container = styled.div`
-height: 150px;
-width: 150px;
-background-color: black;
-gap: 15px;
-`
+  height: 150px;
+  width: 150px;
+  gap: 15px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #31065a;
+    margin-top: 10px;
+  }
+`;

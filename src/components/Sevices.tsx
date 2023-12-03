@@ -130,6 +130,11 @@ border-radius: 20px;
 justify-content: center;
 text-align: center;
 padding: 10px;
+transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
 @media screen and (max-width: 768px) {
   margin-top: -10px;
