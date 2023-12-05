@@ -62,37 +62,33 @@ const HeadText = styled.div`
   padding-bottom: 10px;
 
   @media screen and (max-width: 768px) {
-    height: 100%;
     width: 50%;
+    margin: auto;
+    padding-top: 30px;
   }
 
   @media screen and (max-width: 600px) {
-    height: 100%;
     width: 50%;
+    margin: auto;
+    padding-top: 30px;
   }
 
-    p{
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-        color: white;
-        font-size: 40px;
+  p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 40px;
 
-
-        span{
-            color: #fd562a;
-        }
-
-        @media screen and (max-width: 768px){
-            font-size: 26px;
-            margin-top: 10px;
-        }
-
-        @media screen and (max-width: 600px){
-            font-size: 26px;
-            margin-top: 10px;
-        }
+    span {
+      color: #fd562a;
     }
-`
+
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+    }
+  }
+`;
+
 
 const Box = styled.div`
   padding-top: 130px;
@@ -141,6 +137,7 @@ transition: transform 0.3s ease;
   width: 80%;
   height: 70%;
   margin: auto;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {

@@ -80,6 +80,12 @@ const HeadText = styled.div`
     padding-top: 30px;
   }
 
+  @media screen and (max-width: 600px) {
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+  }
+
 
   p {
     text-align: center;
@@ -141,7 +147,6 @@ transition: transform 0.3s ease;
   &:hover {
     transform: scale(1.1);
   }
-
 
 span{
   color: #31065a;

@@ -46,13 +46,26 @@ const FirstBlock = () => {
 
             <div className="socialIcons">
               <BsLinkedin onClick = {handleLinkedIn}/>
-              <BsGithub onClick = {handleGitHub} />
-              <BsFacebook
+            </div>
+
+            <div className="socialIcons">
+            <BsGithub onClick = {handleGitHub} />
+            </div>
+
+            <div className="socialIcons">
+            <BsFacebook
                 onClick={handleFacebook}
               />
-              <RiTwitterXFill onClick = {handleTwitter} />
-              <FaSquareInstagram onClick = {handleIG} />
             </div>
+
+            <div className="socialIcons">
+            <FaSquareInstagram onClick = {handleIG} />
+            </div>
+
+            <div className="socialIcons">
+            <RiTwitterXFill onClick = {handleTwitter} />
+            </div>
+
           </Icons>
         </TextBox>
         <ImageDiv>
@@ -151,6 +164,11 @@ export const TextBox = styled.div`
     padding-top: 10px;
     display: flex;
     gap: 20px;
+    transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.5);
+  }
     
 
     @media screen and (max-width: 600px){
@@ -203,6 +221,11 @@ export const Icons = styled.div`
     color: white;
     border-radius: 30px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
     @media screen and (max-width: 600px){
       font-size: 15px;

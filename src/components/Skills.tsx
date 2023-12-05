@@ -4,13 +4,13 @@ const Icons = [
   {
     id: 1,
     imageUrl: <img src="src/images/html.png" alt="html" />,
-    name: "HTML",
+    name: "HTML & CSS",
   },
-  {
-    id: 2,
-    imageUrl: <img src="src/images/css.png" alt="css" />,
-    name: "CSS",
-  },
+  // {
+  //   id: 2,
+  //   imageUrl: <img src="src/images/css.png" alt="css" />,
+  //   name: "CSS",
+  // },
   {
     id: 3,
     imageUrl: <img src="src/images/icon-javscript.svg" alt="javascript" />,
@@ -43,44 +43,39 @@ const Icons = [
   },
   {
     id: 9,
-    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
-    name: "Next.Js",
+    imageUrl: <img src="src/images/icon-tailwindcss.svg" alt="tailwindcss" />,
+    name: "Tailwindcss",
   },
   {
     id: 10,
-    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
-    name: "Next.Js",
+    imageUrl: <img src="src/images/icon-postgresql.svg" alt="postgresql" />,
+    name: "PosggreSQL",
   },
   {
     id: 11,
-    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
-    name: "Next.Js",
+    imageUrl: <img src="src/images/mongoDB.svg" alt="mongoDB" />,
+    name: "MongoDB",
   },
   {
     id: 12,
-    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
-    name: "Next.Js",
+    imageUrl: <img src="src/images/mysql.jpeg" alt="mysql" />,
+    name: "MySQL",
   },
   {
     id: 13,
-    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
-    name: "Next.Js",
+    imageUrl: <img src="src/images/GraphQL_Logo.svg.png" alt="graphql" />,
+    name: "GraphQL",
   },
   {
     id: 14,
-    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
-    name: "Next.Js",
+    imageUrl: <img src="src/images/icon-git.svg" alt="git" />,
+    name: "Git",
   },
   {
     id: 15,
-    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
-    name: "Next.Js",
-  },
-  {
-    id: 16,
-    imageUrl: <img src="src/images/icon-nextjs.svg" alt="nextjs" />,
-    name: "Next.Js",
-  },
+    imageUrl: <img src="src/images/docker.png" alt="docker" />,
+    name: "Docker",
+  }
 ];
 
 const FifthBlock = () => {
@@ -102,109 +97,8 @@ const FifthBlock = () => {
               <p>{icon.name}</p>
             </Container>
           ))}
-
-          {/* <Container>
-          )
-          <Container>
-          <Icon>
-            <img src="src/images/html.png" alt="Html" />
-          </Icon>
-          <p>HTML</p>
-          </Container>
-
-          {/* <Container>
-          <Icon>
-            <img src="src/images/css.png" alt="css" />
-          </Icon>
-          <p>CSS</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-javscript.svg" alt="javascript" />
-          </Icon>
-          <p>JavaScript</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-typescript.svg" alt="typescript" />
-          </Icon>
-          <p>TypeScript</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-react.svg" alt="react" />
-          </Icon>
-          <p>React</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-nodejs.svg" alt="nodejs" />
-          </Icon>
-          <p>Node.Js</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-express.svg" alt="express" />
-          </Icon>
-          <p>Express</p>
-          </Container> */}
         </DivOne>
 
-        <DivOne>
-          {/* <Container>
-          <Icon>
-            <img src="src/images/icon-express.svg" alt="express" />
-          </Icon>
-          <p>Express</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-express.svg" alt="express" />
-          </Icon>
-          <p>Express</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-express.svg" alt="express" />
-          </Icon>
-          <p>Express</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-express.svg" alt="express" />
-          </Icon>
-          <p>Express</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-express.svg" alt="express" />
-          </Icon>
-          <p>Express</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-express.svg" alt="express" />
-          </Icon>
-          <p>Express</p>
-          </Container>
-
-          <Container>
-          <Icon>
-            <img src="src/images/icon-express.svg" alt="express" />
-          </Icon>
-          <p>Express</p>
-          </Container> */}
-        </DivOne>
       </MotherDiv>
     </Background>
   );
@@ -216,6 +110,16 @@ const Background = styled.div`
   width: 100%;
   height: 840px;
   background-color: #31065a;
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 const HeadText = styled.div`
@@ -226,6 +130,18 @@ const HeadText = styled.div`
   margin: auto;
   padding-bottom: 10px;
 
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+  }
+
   p {
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -235,13 +151,18 @@ const HeadText = styled.div`
     span {
       color: #fd562a;
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+    }
   }
 `;
+
 
 const MotherDiv = styled.div`
   background-color: white;
   width: 80%;
-  height: 550px;
+  height: 450px;
   padding: 10px;
   margin-top: 70px;
   margin-left: 150px;
@@ -251,12 +172,47 @@ const MotherDiv = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    margin-top: 30px;
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 85%;
+    margin: 30px auto 0px;
+    height: 100%;
+    padding-bottom: 10px;
+  }
 `;
+
+// const extra = styled.div::after`
+//   height: 30px;
+
+// `
+
 
 const DivOne = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 1px;  
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 1px;
+  }
 `;
 
 const Icon = styled.div`
@@ -269,10 +225,20 @@ const Icon = styled.div`
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    position: absolute;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    margin-top: 20px;
   }
 `;
 
@@ -281,6 +247,7 @@ const Container = styled.div`
   width: 150px;
   gap: 15px;
   transition: transform 0.3s ease;
+  margin: auto;
 
   &:hover {
     transform: scale(1.2);
@@ -292,4 +259,5 @@ const Container = styled.div`
     color: #31065a;
     margin-top: 10px;
   }
+
 `;

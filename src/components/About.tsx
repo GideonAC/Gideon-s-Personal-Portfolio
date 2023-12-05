@@ -18,16 +18,15 @@ const SecondBlock = () => {
 
         <Text>
           <p>
-            I am a dedicated and versatile Node.JS Full Stack Software
-            Developer, <br />
-            passionate about crafting robust and scalable web applications,{" "}
-            <br />
-            driven by a deep understanding of both front-end and back-end
-            technologies. <br />
-            My career has been marked by successful project deliveries, <br />
-            collaborating with cross- functional teams, <br />
-            and a commitment to continuous learning to keep up <br />
-            with the ever- evolving tech landscape.
+            I'm a Node.JS Software Developer on a mission to bring innovation to the world of tech. With a Bachelor's degree in Anatomy from Chukwuemeka Odumegwu Ojukwu University, My smooth transition into the ever-evolving world of Tech is due to my keen and unwavering interest in implementing innovative ideas in problem solving. <br />
+
+            I thrive on crafting cutting-edge web applications that not only meet but exceed expectations. From frontend to backend, I've got a solid grip on technologies like JavaScript, React, Node.JS, TypeScript, Docker, GraphQL, MongoDB, and more – showcasing my versatility in the vast MERN stack. My continuous learning ability has been my reason of staying updated in the industry trends. <br />
+
+            As a full stack engineer, my focus is on delivering scalable applications that not only meet the needs of clients but also ensure an exceptional user experience. Throughout my career, I've been dedicated to designing and implementing efficient, maintainable code while collaborating with diverse teams to ensure successful project delivery. Additionally, I embrace the Agile mindset, enabling me to collaborate seamlessly within a team. <br />
+
+            What sets me apart is not just my tech skills – but my work ethics, adaptability, collaborative spirit, problem-solving mindset, and an unwavering commitment to innovation. Challenges fuel my passion, and I'm here to deliver solutions that go beyond the ordinary.
+
+            Let's connect and discuss about how I can bring my skills and enthusiasm to your projects. Looking forward to it!
           </p>
         </Text>
       </Box>
@@ -67,6 +66,12 @@ const HeadText = styled.div`
     padding-top: 30px;
   }
 
+  @media screen and (max-width: 600px) {
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+  }
+
   p {
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -84,7 +89,7 @@ const HeadText = styled.div`
 `;
 
 const Box = styled.div`
-  padding-top: 90px;
+  padding-top: 50px;
   display: flex;
   justify-content: space-around;
 
@@ -132,6 +137,9 @@ const Profile = styled.div`
 `;
 
 const Text = styled.div`
+  width: 50%;
+  height: 410px;
+
   p {
     color: white;
     line-height: 30px;

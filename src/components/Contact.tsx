@@ -97,25 +97,33 @@ const HeadText = styled.div`
   padding-bottom: 10px;
 
   @media screen and (max-width: 768px) {
-    height: 100%;
-    width: 30%;
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
   }
 
   @media screen and (max-width: 600px) {
-    height: 100%;
-    width: 30%;
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
   }
+
   p {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
 
     span {
       color: #fd562a;
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+    }
   }
 `;
+
 
 const Box = styled.div`
   padding-top: 150px;
@@ -160,6 +168,7 @@ const Icons = styled.div`
   color: white;
   gap: 50px;
   font-size: 35px;
+  
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -171,10 +180,19 @@ const Icons = styled.div`
     display: flex;
     flex-direction: column;
    margin-left: auto;
+ 
   }
 
   span {
     padding-left: 30px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    }
   }
 `;
 
