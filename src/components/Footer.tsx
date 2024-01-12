@@ -27,6 +27,14 @@ const FooterDiv = styled.div`
     font-size: 18px;
     padding-top: 15px;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 12px;
+    }
   }
 
   span{

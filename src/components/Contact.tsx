@@ -13,17 +13,16 @@ const SixthBlock = () => {
         </p>
       </HeadText>
 
-
       <Box>
         <Icons>
           <p>
-            {<FaPhone />} <span>+234-7061904384</span>{" "}
+            <FaPhone /> <span>+234-7061904384</span>
           </p>
           <p>
-            {<IoMail />} <span id="mail">arinzechukwugideon@gmail.com</span>{" "}
+            <IoMail /> <span id="mail">arinzechukwugideon@gmail.com</span>
           </p>
           <p>
-            {<FaLocationArrow />} <span>Lagos State, Nigeria</span>{" "}
+            <FaLocationArrow /> <span>Lagos State, Nigeria</span>
           </p>
         </Icons>
 
@@ -124,11 +123,12 @@ const HeadText = styled.div`
   }
 `;
 
-
 const Box = styled.div`
   padding-top: 150px;
   display: flex;
   justify-content: space-around;
+  width: 90%;
+  margin: auto;
 
   @media screen and (max-width: 768px) {
     padding-top: 50px;
@@ -146,55 +146,69 @@ const Box = styled.div`
     padding-bottom: 50px;
   }
 
-  p{
+  p {
     @media screen and (max-width: 768px) {
       margin-right: 300px;
       font-size: 26px;
 
-      #mail{
+      #mail {
         margin-bottom: 10px;
       }
-  }
+    }
 
-  @media screen and (max-width: 600px) {
-    margin-left: 30px;
-    font-size: 15px;
-  }
+    @media screen and (max-width: 600px) {
+      margin-left: 30px;
+      font-size: 15px;
+    }
   }
 `;
 
 const Icons = styled.div`
-  display: grid;
-  color: white;
+  display: flex;
+  flex-direction: column;
   gap: 50px;
+  color: white;
+  width: 90%;
   font-size: 35px;
-  
 
-  @media screen and (max-width: 768px) {
+  p {
     display: flex;
-    flex-direction: column;
-    margin-left: auto;
-  }
-
-  @media screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-   margin-left: auto;
- 
-  }
-
-  span {
-    padding-left: 30px;
-
-    @media screen and (max-width: 768px) {
-      font-size: 26px;
-    }
-
-    @media screen and (max-width: 600px) {
-      font-size: 18px;
-    }
+    width: 100%;
+    gap: 20px;
   }
 `;
+
+// const Icons = styled.div`
+//   display: grid;
+//   color: white;
+//   gap: 50px;
+//   font-size: 35px;
+
+//   @media screen and (max-width: 768px) {
+//     display: flex;
+//     flex-direction: column;
+//     margin-left: auto;
+//   }
+
+//   @media screen and (max-width: 600px) {
+//     display: flex;
+//     flex-direction: column;
+//    margin-left: auto;
+
+//   }
+
+//   span {
+//     padding-left: 30px;
+
+//     @media screen and (max-width: 768px) {
+//       font-size: 26px;
+//     }
+
+//     @media screen and (max-width: 600px) {
+//       font-size: 18px;
+//     }
+//   }
+// `;
 
 const StyledForm = styled.form`
   display: flex;

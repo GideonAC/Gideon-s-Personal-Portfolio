@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaSquareInstagram } from "react-icons/fa6";
+import { useEffect, useState } from "react";
 
 const FirstBlock = () => {
   const handleFacebook = () => {
@@ -29,18 +30,35 @@ const FirstBlock = () => {
     window.open(iGProfileUrl, "_blank");
   };
 
+  const [text, setText] = useState("");
+  const fullText = "Hello, I'm";
+
+
+  useEffect(() => {
+    let currentIndex = 0;
+
+    const intervalId = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setText(fullText.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 100);
+    return () => clearInterval(intervalId); // Cleanup on component unmount
+  }, []);
+
 
   return (
     <Background1 id="Home">
       <MainDiv>
         <TextBox>
-          <h1 className="hello">Hello, I'm</h1>
+          <h1 className="hello"> {text} </h1>
           <h1 className="fName">Gideon</h1>
           <h1 className="lName">Arinzechukwu</h1>
           <h1 className="dev">a Software Developer</h1>
           <Icons>
             <button>
-              {" "}
               <a href="#Contact">Contact</a>
             </button>
 
@@ -134,6 +152,9 @@ export const TextBox = styled.div`
     font-family: "Dangrek", sans-serif;
     font-size: 90px;
     color: white;
+    animation: slideInLeft 1s ease-in 0s 1 normal both;
+
+    transform: translateX(-150);
 
     @media screen and (max-width: 600px){
       font-size: 55px;
@@ -145,6 +166,11 @@ export const TextBox = styled.div`
     font-size: 90px;
     color: #fd562a;
 
+    animation: slideInRight 1s ease-in 0.5s 1 normal both;
+
+    transform: translateX(150);
+
+
     @media screen and (max-width: 600px){
       font-size: 53px;
     }
@@ -154,6 +180,8 @@ export const TextBox = styled.div`
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
+    animation: bounce;
+
 
     @media screen and (max-width: 600px){
       font-size: 20px;

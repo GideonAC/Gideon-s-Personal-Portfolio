@@ -148,15 +148,26 @@ const Text = styled.div`
     font-family: "Times New Roman", Times, serif;
 
     @media screen and (max-width: 768px) {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 20px;
-      line-height: 25px;
-    }
-
-    @media screen and (max-width: 600px) {
-      font-size: 15px;
-      line-height: 20px;
+      font-size: 10px;
+      line-height: 15px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 `;
+
+
