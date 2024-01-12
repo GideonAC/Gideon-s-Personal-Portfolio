@@ -20,6 +20,7 @@ const NavBar = () => {
   };
 
   // const { showDrawer, showDrawerHandle } = useUserContext();
+  
   // console.log(showDrawer);
 
   return (
